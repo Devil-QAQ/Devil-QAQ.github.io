@@ -1,0 +1,807 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/5a0cff743eca8b9ac6420973103c122.jpg">
+  <link rel="icon" href="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/5a0cff743eca8b9ac6420973103c122.jpg">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  
+    <meta name="description" content="耐心陪伴">
+  
+  <meta name="author" content="Devil">
+  <meta name="keywords" content="">
+  
+  <title>钓鱼邮件（一） - MeetRain</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"meetrain.cn","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":100,"cursorChar":"_","loop":true},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>MeetRain</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/9c98b7cc40dac25f4902db6d99c5419.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="钓鱼邮件（一）">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-03-12 16:54" pubdate>
+        2021年3月12日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      24
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">钓鱼邮件（一）</h1>
+            
+            <div class="markdown-body">
+              <h1 id="一、介绍"><a href="#一、介绍" class="headerlink" title="一、介绍"></a>一、介绍</h1><p>Gophish：开源网络钓鱼工具包。</p>
+<p>Gophish是为企业和渗透测试人员设计的开源网络钓鱼工具包。 它提供了快速，轻松地设置和执行网络钓鱼攻击以及安全意识培训的能力。</p>
+<p>Gophish自带web面板，对于邮件编辑、网站克隆、数据可视化、批量发送等功能的使用带来的巨大的便捷，在功能上实现分块，令钓鱼初学者能够更好理解钓鱼工作各部分的原理及运用。</p>
+<p>Gophish项目地址：<a target="_blank" rel="noopener" href="https://github.com/gophish/gophish">https://github.com/gophish/gophish</a></p>
+<p>Gophish官网地址：<a target="_blank" rel="noopener" href="https://getgophish.com/">https://getgophish.com/</a></p>
+<h1 id="二、下载"><a href="#二、下载" class="headerlink" title="二、下载"></a>二、下载</h1><p>地址：<a target="_blank" rel="noopener" href="https://github.com/gophish/gophish/releases">https://github.com/gophish/gophish/releases</a></p>
+<p>建议在centos7（windows中搭建gophish，虽然比较方便，但是如果买的vps不是高配版，建议不要在windows中搭建gophish，经测试，太卡了） 在github上根据不同操作系统下载对应版本即可。</p>
+<h1 id="三、快速安装"><a href="#三、快速安装" class="headerlink" title="三、快速安装"></a>三、快速安装</h1><p>下载完成后，创建gophish目录，解压至此目录下</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">mkdir</span> gophish<br><span class="hljs-attribute">unzip</span> gophish-v<span class="hljs-number">0</span>.<span class="hljs-number">11</span>.<span class="hljs-number">0</span>-linux-<span class="hljs-number">64</span>bit.zip<br></code></pre></td></tr></table></figure>
+
+<p>目录文件如下</p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312161205852.png" srcset="/img/loading.gif" alt="image-20210312161205852"></p>
+<p><strong>修改配置文件</strong></p>
+<p>此时需要修改config.json,（如下是本次已经修改完成的，之前的配置是<del>127.0.0.1:3333</del>）。</p>
+<p>80端口代表钓鱼网站开放的端口；后台管理页面开放的端口是3333。 </p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">vim <span class="hljs-built_in">config</span>.json<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs json">&#123;<br>        <span class="hljs-attr">&quot;admin_server&quot;</span>: &#123;<br>                <span class="hljs-attr">&quot;listen_url&quot;</span>: <span class="hljs-string">&quot;0.0.0.0:3333&quot;</span>,<br>                <span class="hljs-attr">&quot;use_tls&quot;</span>: <span class="hljs-literal">true</span>,<br>                <span class="hljs-attr">&quot;cert_path&quot;</span>: <span class="hljs-string">&quot;gophish_admin.crt&quot;</span>,<br>                <span class="hljs-attr">&quot;key_path&quot;</span>: <span class="hljs-string">&quot;gophish_admin.key&quot;</span><br>        &#125;,<br>        <span class="hljs-attr">&quot;phish_server&quot;</span>: &#123;<br>                <span class="hljs-attr">&quot;listen_url&quot;</span>: <span class="hljs-string">&quot;0.0.0.0:80&quot;</span>,<br>                <span class="hljs-attr">&quot;use_tls&quot;</span>: <span class="hljs-literal">false</span>,<br>                <span class="hljs-attr">&quot;cert_path&quot;</span>: <span class="hljs-string">&quot;example.crt&quot;</span>,<br>                <span class="hljs-attr">&quot;key_path&quot;</span>: <span class="hljs-string">&quot;example.key&quot;</span><br>        &#125;,<br>        <span class="hljs-attr">&quot;db_name&quot;</span>: <span class="hljs-string">&quot;sqlite3&quot;</span>,<br>        <span class="hljs-attr">&quot;db_path&quot;</span>: <span class="hljs-string">&quot;gophish.db&quot;</span>,<br>        <span class="hljs-attr">&quot;migrations_prefix&quot;</span>: <span class="hljs-string">&quot;db/db_&quot;</span>,<br>        <span class="hljs-attr">&quot;contact_address&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,<br>        <span class="hljs-attr">&quot;logging&quot;</span>: &#123;<br>                <span class="hljs-attr">&quot;filename&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,<br>                <span class="hljs-attr">&quot;level&quot;</span>: <span class="hljs-string">&quot;&quot;</span><br>        &#125;<br>&#125;<br><br></code></pre></td></tr></table></figure>
+
+<p><strong>启动gophish</strong></p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">chmod 777 gophish  <span class="hljs-comment">#加权限</span><br><span class="hljs-string">./gophish</span>  <span class="hljs-comment">#启动</span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312161625845.png" srcset="/img/loading.gif" alt="image-20210312161625845"></p>
+<p><strong>访问后台管理系统</strong></p>
+<p>打开Internet浏览器到<u><a target="_blank" rel="noopener" href="https://ip:3333/">https://ip:3333</a></u>并使用日志输出中列出的默认用户名和密码登录，并设置新密码。例如</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros"><span class="hljs-attribute">time</span>=<span class="hljs-string">&quot;2021-03-04T16:21:15+08:00&quot;</span> <span class="hljs-attribute">level</span>=info <span class="hljs-attribute">msg</span>=<span class="hljs-string">&quot;Please login with the username admin and the password 276b6420fc33d622&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p><em><strong>Tips：</strong></em></p>
+<p><em><strong>v0.10.1之前的Gophish发行版的默认账号和密码是 admin/gophish（建议如果是公网vps等，请修改默认密码）。</strong></em></p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312162320143.png" srcset="/img/loading.gif" alt="image-20210312162320143"></p>
+<p><strong>访问钓鱼界面</strong></p>
+<p>打开Internet浏览器到<u><a target="_blank" rel="noopener" href="http://ip/">http://ip:80</a></u></p>
+<p>由于我们还未配置钓鱼页面，提示小段的404 page not found说明运行正常</p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312162535742.png" srcset="/img/loading.gif" alt="image-20210312162535742"></p>
+<p>至此，已完成gophish的安装以及相关配置，并运行起来，windows下的请选择相应安装包。</p>
+<p><em><strong>Tips：</strong></em></p>
+<p><em><strong>若要长期运行，请使用nohup命令保持后台运行。</strong></em></p>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 1c">nohup ./gophish <span class="hljs-meta">&amp;</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="四、功能介绍"><a href="#四、功能介绍" class="headerlink" title="四、功能介绍"></a>四、功能介绍</h1><p>进入后台左侧栏目分别是：Dashboard（仪表板） 、Campaigns（钓鱼事件） 、Users &amp; Groups（用户和组） 、Email Templates（邮件模板） 、Landing Pages（钓鱼页面） 、Sending Profiles（发件策略）。</p>
+<table>
+<thead>
+<tr>
+<th>模块名称</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dashboard</td>
+<td>仪表板，查看整体测试情况</td>
+</tr>
+<tr>
+<td>Campaigns</td>
+<td>每次攻击前需要配置一次</td>
+</tr>
+<tr>
+<td>Users &amp; Groups</td>
+<td>用户和用户组（添加需要进行钓鱼的邮箱和相关基础信息）</td>
+</tr>
+<tr>
+<td>Email Templates</td>
+<td>电子邮件模板</td>
+</tr>
+<tr>
+<td>Landing Pages</td>
+<td>需要伪造的钓鱼页面</td>
+</tr>
+<tr>
+<td>Sending Profiles</td>
+<td>钓鱼邮箱发送配置</td>
+</tr>
+</tbody></table>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312163210532.png" srcset="/img/loading.gif" alt="image-20210312163210532"></p>
+<h1 id="五、实战演习"><a href="#五、实战演习" class="headerlink" title="五、实战演习"></a>五、实战演习</h1><h2 id="1、配置发件策略（Sending-Profiles）"><a href="#1、配置发件策略（Sending-Profiles）" class="headerlink" title="1、配置发件策略（Sending Profiles）"></a>1、配置发件策略（Sending Profiles）</h2><p>Sending Profiles的主要作用是将用来发送钓鱼邮件的邮箱配置到gophish</p>
+<p>点击Sending Profiles-New Profile新建一个发件策略</p>
+<p><strong>字段介绍：</strong></p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Name</td>
+<td>新建策略的命名</td>
+</tr>
+<tr>
+<td>Interface Type</td>
+<td>接口类型，默认为SMTP类型且不可修改，因此需要发件邮箱开启SMTP服务</td>
+</tr>
+<tr>
+<td>Form</td>
+<td>钓鱼邮件显示的发件人</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>smtp服务器的地址</td>
+</tr>
+<tr>
+<td>Username</td>
+<td>smtp认证用户名</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>smtp认证密码</td>
+</tr>
+<tr>
+<td>Email Headers</td>
+<td>自定义邮件头字段（可不填）</td>
+</tr>
+</tbody></table>
+<p>此处使用qq邮箱登录smtp密码处需要填写授权码，可到qq邮箱进行获取（设置-账户-开启SMTP服务）</p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312163616121.png" srcset="/img/loading.gif" alt="image-20210312163616121"></p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312163624642.png" srcset="/img/loading.gif" alt="image-20210312163624642"></p>
+<p>设置好字段以后，点击Send Test Email发送测试邮件</p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312163642920.png" srcset="/img/loading.gif" alt="image-20210312163642920"></p>
+<p>收到测试邮件，记得保存策略</p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312163656250.png" srcset="/img/loading.gif" alt="image-20210312163656250"></p>
+<p><em><strong>Tips：</strong></em></p>
+<p><em><strong>如果使用国内的服务器搭建gophish，是会发送失败的，因为国内的服务器25端口默认是封闭的，国外服务器可以。如果使用163邮箱，默认也是不能发送成功的，需要配置操作。</strong></em></p>
+<h2 id="2、配置钓鱼页面（Landing-Pages）"><a href="#2、配置钓鱼页面（Landing-Pages）" class="headerlink" title="2、配置钓鱼页面（Landing Pages）"></a>2、配置钓鱼页面（Landing Pages）</h2><p>Landing Pages是配置伪造钓鱼页面</p>
+<p>点击Landing Pages-New Page新建一个钓鱼页面</p>
+<p><strong>字段介绍：</strong></p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Name</td>
+<td>新建钓鱼页面的命名</td>
+</tr>
+<tr>
+<td>Import Site</td>
+<td>被伪造网站的URL</td>
+</tr>
+<tr>
+<td>HTML</td>
+<td>内容编辑框</td>
+</tr>
+<tr>
+<td>Capture Submitted Data</td>
+<td>捕获提交的数据（密码除外）</td>
+</tr>
+<tr>
+<td>Capture Passwords</td>
+<td>捕获密码</td>
+</tr>
+<tr>
+<td>Redirect to</td>
+<td>点击后重定向至指定页面</td>
+</tr>
+</tbody></table>
+<p><em><strong>Tips：</strong></em></p>
+<p><em><strong>由于编码的不同，通常直接通过Import Site导入的网站，其中文部分多少存在乱码现象，这时候就需要查看源码并手动修改过来。</strong></em></p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312164107136.png" srcset="/img/loading.gif" alt="image-20210312164107136"></p>
+<p>配置好后点击预览，并保存</p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312164123229.png" srcset="/img/loading.gif" alt="image-20210312164123229"></p>
+<h2 id="3、配置钓鱼邮件（Email-Templates）"><a href="#3、配置钓鱼邮件（Email-Templates）" class="headerlink" title="3、配置钓鱼邮件（Email Templates）"></a>3、配置钓鱼邮件（Email Templates）</h2><p>Email Templates是配置钓鱼邮件模板</p>
+<p>点击Email Templates-New Template新建一个钓鱼邮件模板</p>
+<p><strong>字段介绍：</strong></p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Name</td>
+<td>新建钓鱼邮件模板的命名</td>
+</tr>
+<tr>
+<td>Import Email</td>
+<td>导入钓鱼邮件模板</td>
+</tr>
+<tr>
+<td>Subject</td>
+<td>邮件主题</td>
+</tr>
+<tr>
+<td>Text/Html</td>
+<td>内容编辑框</td>
+</tr>
+<tr>
+<td>Add Tracking Image</td>
+<td>在钓鱼邮件末添加一个跟踪图像，跟踪是否打开</td>
+</tr>
+<tr>
+<td>Redirect to</td>
+<td>点击后重定向至指定页面</td>
+</tr>
+<tr>
+<td>Add Files</td>
+<td>添加邮件附件（木马、远控等）</td>
+</tr>
+</tbody></table>
+<p><em><strong>Tips：</strong></em></p>
+<p><em><strong>为了后续记录邮件是否打开，可勾选上AddTrackingImage，它将会在发送的每份邮件源码上插入一个唯一特定的隐藏图片，当邮件被打开时，此隐藏图片则也会被请求，以此来检测该邮件是否被打开，AddFiles则是给邮件添加附件。如下是官方提供的其他可以使用的参数。</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&#123;&#123;.RId&#125;&#125;</code></td>
+<td>The target’s unique ID</td>
+</tr>
+<tr>
+<td><code>&#123;&#123;.FirstName&#125;&#125;</code></td>
+<td>The target’s first name</td>
+</tr>
+<tr>
+<td><code>&#123;&#123;.LastName&#125;&#125;</code></td>
+<td>The target’s last name</td>
+</tr>
+<tr>
+<td><code>&#123;&#123;.Position&#125;&#125;</code></td>
+<td>The target’s position</td>
+</tr>
+<tr>
+<td><code>&#123;&#123;.Email&#125;&#125;</code></td>
+<td>The target’s email address</td>
+</tr>
+<tr>
+<td><code>&#123;&#123;.From&#125;&#125;</code></td>
+<td>The spoofed sender</td>
+</tr>
+<tr>
+<td><code>&#123;&#123;.TrackingURL&#125;&#125;</code></td>
+<td>The URL to the tracking handler</td>
+</tr>
+<tr>
+<td><code>&#123;&#123;.Tracker&#125;&#125;</code></td>
+<td>An alias for</td>
+</tr>
+<tr>
+<td><code>&#123;&#123;.URL&#125;&#125;</code></td>
+<td>The phishing URL</td>
+</tr>
+<tr>
+<td><code>&#123;&#123;.BaseURL&#125;&#125;</code></td>
+<td>The base URL with the path and rid parameter stripped. Useful for  making links to static files.</td>
+</tr>
+</tbody></table>
+<p><strong>在<a>标签内添加<code>&#123;&#123;.URL&#125;&#125;</code>会将gophish生成的钓鱼页面自动补充到标签内。</strong></p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312164418173.png" srcset="/img/loading.gif" alt="image-20210312164418173"></p>
+<p>配置完成后点击保存</p>
+<h2 id="4、配置用户组（Users-amp-Groups）"><a href="#4、配置用户组（Users-amp-Groups）" class="headerlink" title="4、配置用户组（Users &amp; Groups）"></a>4、配置用户组（Users &amp; Groups）</h2><p>Users &amp; Groups是配置被钓鱼的邮箱地址</p>
+<p>点击Users &amp; Groups-New Group新建一个用户组</p>
+<p><strong>字段介绍：</strong></p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Name</td>
+<td>新建用户组的命名</td>
+</tr>
+<tr>
+<td>Bulk Import Users</td>
+<td>批量导入用户组</td>
+</tr>
+</tbody></table>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312164520347.png" srcset="/img/loading.gif" alt="image-20210312164520347"></p>
+<p>配置完成后点击保存</p>
+<h2 id="5、新建钓鱼事件（Campaigns）"><a href="#5、新建钓鱼事件（Campaigns）" class="headerlink" title="5、新建钓鱼事件（Campaigns）"></a>5、新建钓鱼事件（Campaigns）</h2><p>Campaigns是将上述四个功能，联系起来，调用配置的模板创建钓鱼事件</p>
+<p>点击Campaigns-New Campaigns新建一个用户组</p>
+<p><strong>字段介绍：</strong></p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Name</td>
+<td>钓鱼事件名称</td>
+</tr>
+<tr>
+<td>Email Template</td>
+<td>钓鱼邮件模板</td>
+</tr>
+<tr>
+<td>Landing Page</td>
+<td>钓鱼页面模板</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>替换选定钓鱼邮件模板中超链接{ {.URL} }的值</td>
+</tr>
+<tr>
+<td>Launch Date</td>
+<td>邮件发送时间</td>
+</tr>
+<tr>
+<td>Sending Profile</td>
+<td>邮件发送策略模板</td>
+</tr>
+<tr>
+<td>Groups</td>
+<td>邮件发送受害者</td>
+</tr>
+</tbody></table>
+<p><em><strong>Tips：</strong></em></p>
+<p><em><strong>当URL填写了http://主机IP/，并成功创建了当前的钓鱼事件后。gophish会在主机的80端口部署当前钓鱼事件所选定的钓鱼页面，并在发送的钓鱼邮件里，将其中所有的<code>&#123;&#123;.URL&#125;&#125;</code>都替换成部署在80端口的钓鱼页面的URL。</strong></em></p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312164644857.png" srcset="/img/loading.gif" alt="image-20210312164644857"></p>
+<p>配置完成后点击Launch Campaign，发送钓鱼邮件</p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312164714305.png" srcset="/img/loading.gif" alt="image-20210312164714305"></p>
+<h2 id="6、仪表盘（Dashboard）"><a href="#6、仪表盘（Dashboard）" class="headerlink" title="6、仪表盘（Dashboard）"></a>6、仪表盘（Dashboard）</h2><p>Dashboard是所有钓鱼事件的数据，点击创建的单个钓鱼事件查看</p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312164743586.png" srcset="/img/loading.gif" alt="image-20210312164743586"></p>
+<p><strong>查看捕获数据</strong></p>
+<p><img src="https://tengxiaofei-img.oss-cn-beijing.aliyuncs.com/img/wj/image-20210312164758725.png" srcset="/img/loading.gif" alt="image-20210312164758725"></p>
+<p><strong><u>到此钓鱼邮件整体流程结束，关于邮件服务器请转至下章。</u></strong></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%94%BB%E9%98%B2/">攻防</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/web%E3%80%81%E9%92%93%E9%B1%BC/">web、钓鱼</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/03/03/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <span>©2021 - 2021</span> <i class="iconfont icon-love"></i> <span>Devil</span> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
